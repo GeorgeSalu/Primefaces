@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+	<h:head>
+	
+	</h:head>
+
+	<h:body>
+		
+		<h:form>
+			<h:panelGrid columns="3" cellpadding="5">
+				<h:outputLabel for="menu" value="Location : " />
+				<p:selectCheckboxMenu id="menu" label="Cities" value="#{checkboxView.selectedCities}" filter="true" filterMatchMode="startsWith" panelStyle="width:250px">
+					<f:selectItems value="#{checkboxView.cities}"></f:selectItems>
+				</p:selectCheckboxMenu>
+				<p:commandLink value="Submit" update="display"></p:commandLink>
+			</h:panelGrid>
+			<p:outputPanel id="display" style="width:250px;padding-left:5px;margin-top:10px">
+				<p:dataList value="#{checkboxView.selectedCities}" var="city" emptyMessage="No cities seleted">
+					#{city}
+				</p:dataList>
+			</p:outputPanel>
+		</h:form>
+			
+	</h:body>
+	
+</html>
