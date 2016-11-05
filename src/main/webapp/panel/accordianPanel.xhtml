@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+	<h:head>
+	
+	</h:head>
+
+	<h:body>
+		
+		<h:form>
+			<p:growl id="msgs" showDetail="true" />
+			
+			<h3 style="margin-top:0">Basic</h3>
+		    <p:accordionPanel>
+		        <p:tab title="Godfather Part I">
+		            <h:panelGrid columns="2" cellpadding="10">
+		                <h:outputText
+		                    value="The story begins as Don Vito Corleone..." />
+		            </h:panelGrid>
+		        </p:tab>
+		        <p:tab title="Godfather Part II">
+		            <h:panelGrid columns="2" cellpadding="10">
+		                <h:outputText value="Francis Ford Coppola's legendary..." />
+		            </h:panelGrid>
+		        </p:tab>
+		        <p:tab title="Godfather Part III">
+		            <h:panelGrid columns="2" cellpadding="10">
+		                <h:outputText value="After a break of more than 15 years..." />
+		            </h:panelGrid>
+		        </p:tab>
+		    </p:accordionPanel>
+		 
+		    <h3>Multiple Selection</h3>
+		    <p:accordionPanel multiple="true">
+		        <p:tab title="Godfather Part I">
+		            <h:panelGrid columns="2" cellpadding="10">
+		                <h:outputText
+		                    value="The story begins as Don Vito Corleone..." />
+		            </h:panelGrid>
+		        </p:tab>
+		        <p:tab title="Godfather Part II">
+		            <h:panelGrid columns="2" cellpadding="10">
+		                <h:outputText value="Francis Ford Coppola's legendary..." />
+		            </h:panelGrid>
+		        </p:tab>
+		        <p:tab title="Godfather Part III">
+		            <h:panelGrid columns="2" cellpadding="10">
+		                <h:outputText value="After a break of more than 15 years...." />
+		            </h:panelGrid>
+		        </p:tab>
+		    </p:accordionPanel>
+		 
+		    <h3>On-Demand Loading</h3>
+		    <p:accordionPanel dynamic="true" cache="true">
+		        <p:tab title="Godfather Part I">
+		            <h:panelGrid columns="2" cellpadding="10">
+		                <h:outputText
+		                    value="The story begins as Don Vito Corleone..." />
+		            </h:panelGrid>
+		        </p:tab>
+		        <p:tab title="Godfather Part II">
+		            <h:panelGrid columns="2" cellpadding="10">
+		                <h:outputText value="Francis Ford Coppola's legendary..." />
+		            </h:panelGrid>
+		        </p:tab>
+		        <p:tab title="Godfather Part III">
+		            <h:panelGrid columns="2" cellpadding="10">
+		                <h:outputText value="After a break of more than 15 years..." />
+		            </h:panelGrid>
+		        </p:tab>
+		    </p:accordionPanel>
+		 
+		 
+		</h:form>
+			
+	</h:body>
+	
+</html>
