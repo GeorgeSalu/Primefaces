@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+	<h:head>
+	
+	</h:head>
+
+	<h:body>
+		
+		<h:form>
+		    <p:growl id="growl" showDetail="true" />
+		 
+		    <h:panelGrid columns="2" columnClasses="left,right" style="width:100%">
+		        <p:chart type="pie" model="#{chartView4.pieModel1}" style="width:400px;height:300px">
+		            <p:ajax event="itemSelect" listener="#{chartView4.itemSelect}" update="growl" />
+		        </p:chart>
+		 
+		        <p:chart type="bar" model="#{chartView4.barModel}" style="width:400px;height:300px">
+		            <p:ajax event="itemSelect" listener="#{chartView4.itemSelect}" update="growl" />
+		        </p:chart>  
+		    </h:panelGrid>
+		 
+		</h:form>
+			
+	</h:body>
+	
+</html>
