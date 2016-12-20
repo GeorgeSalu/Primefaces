@@ -20,11 +20,11 @@ public class TabbedView {
 	@PostConstruct
 	public void init() {
 		cars = new ArrayList<Car>();
-		cars.add(new Car("dttddu", "fiat", "2017", "vermelho", "12.000.00", true));
-		cars.add(new Car("dtsssss", "BMW", "2019", "verde", "12.000.00", false));
-		cars.add(new Car("dtsssss", "Ford", "2012", "preto", "12.000.00", false));
-		cars.add(new Car("dtsssss", "corsa", "2012", "preto", "12.000.00", false));
-		cars.add(new Car("dtsssss", "volvo", "2012", "preto", "12.000.00", false));
+		cars.add(new Car("dttddu", "fiat", 2017, "vermelho", 12, true));
+		cars.add(new Car("dtsssss", "BMW", 2019, "verde", 12, false));
+		cars.add(new Car("dtsssss", "Ford", 2012, "preto", 19, false));
+		cars.add(new Car("dtsssss", "corsa", 2012, "preto", 12, false));
+		cars.add(new Car("dtsssss", "volvo", 2012, "preto", 17, false));
 	}
 
 	public List<Car> getCars() {

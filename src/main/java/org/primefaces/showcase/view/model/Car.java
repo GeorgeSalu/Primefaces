@@ -4,17 +4,17 @@ public class Car {
 
 	private String placa;
 	private String modelo;
-	private String ano;
+	private int ano;
 	private String cor;
-	private String valor;
+	private int valor;
 	private boolean usado;
 
-	public Car(String placa, String modelo, String ano, String cor, String valor, boolean usado) {
+	public Car(String placa, String modelo, int i, String cor, int j, boolean usado) {
 		this.placa = placa;
 		this.modelo = modelo;
-		this.ano = ano;
+		this.ano = i;
 		this.cor = cor;
-		this.valor = valor;
+		this.valor = j;
 		this.usado = usado;
 	}
 
@@ -34,11 +34,11 @@ public class Car {
 		this.modelo = modelo;
 	}
 
-	public String getAno() {
+	public int getAno() {
 		return ano;
 	}
 
-	public void setAno(String ano) {
+	public void setAno(int ano) {
 		this.ano = ano;
 	}
 
@@ -50,11 +50,11 @@ public class Car {
 		this.cor = cor;
 	}
 
-	public String getValor() {
+	public int getValor() {
 		return valor;
 	}
 
-	public void setValor(String valor) {
+	public void setValor(int valor) {
 		this.valor = valor;
 	}
 
